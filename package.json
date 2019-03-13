@@ -4,19 +4,23 @@
   "description": "Osano extension builder",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "",
   "license": "MIT",
   "homepage": "https://www.osano.com",
   "dependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-chrome-manifest": "0.0.13",
     "gulp-clean": "^0.4.0",
     "gulp-cssmin": "^0.2.0",
     "gulp-if": "^2.0.2",
     "gulp-terser": "^1.1.7",
     "gulp-zip": "^4.2.0",
-    "run-sequence": "^2.2.1"
-  }
+    "run-sequence": "^2.2.1",
+    "snyk": "^1.136.2"
+  },
+  "snyk": true
 }
